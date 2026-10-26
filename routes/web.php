@@ -150,5 +150,5 @@ Route::get('/screenshot/pos', function () {
 Route::get('/screenshot/purchases', function () {
     $staff = \App\Models\User::where('role', 'staff')->first();
     \Illuminate\Support\Facades\Auth::login($staff);
-    return app(\App\Http\Controllers\PurchaseController::class)->index();
+    return app(\App\Http\Controllers\PurchaseController::class)->index(request());
 });

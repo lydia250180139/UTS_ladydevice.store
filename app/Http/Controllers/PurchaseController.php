@@ -13,8 +13,9 @@ use Carbon\Carbon;
 
 class PurchaseController extends Controller
 {
-    public function index(Request $request)
+    public function index(?Request $request = null)
     {
+        $request = $request ?? request();
         $query = Purchase::with(['supplier', 'user', 'items.product'])->latest('purchased_at');
 
         if ($request->filled('search')) {
