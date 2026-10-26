@@ -23,6 +23,42 @@ Sistem telah dilengkapi seeder akun untuk 3 role pengguna utama dengan kredensia
 
 ---
 
+## 📸 Tangkapan Layar Tampilan Web (Screenshots Showcase)
+
+Berikut adalah dokumentasi visual antarmuka sistem **ladydevice.store** untuk setiap fitur dan peran pengguna:
+
+### 1. Etalase Toko Digital Laptop Estetik & Detail Produk
+| Halaman Utama Katalog Laptop (`/`) | Detail Laptop & Spesifikasi Lengkap (`/product/{slug}`) |
+| :---: | :---: |
+| ![Etalase Beranda](docs/screenshots/01_storefront_home.png) | ![Detail Produk](docs/screenshots/02_product_detail.png) |
+
+---
+
+### 2. Keranjang Belanja & Checkout Multi-Pembayaran
+| Keranjang Belanja & Opsi Pembayaran QRIS / Transfer / Tunai (`/cart`) | Halaman Keamanan Proteksi 403: Akses Terlarang |
+| :---: | :---: |
+| ![Troli & Checkout](docs/screenshots/03_cart_checkout.png) | ![Akses Terlarang 403](docs/screenshots/07_forbidden_403.png) |
+
+---
+
+### 3. Tiga Portal Login Terpisah Berdasarkan Role Pengguna
+| Portal Pelanggan (`/login`) | Portal Admin / Staff (`/login/admin`) | Portal Pemilik / Owner (`/login/owner`) |
+| :---: | :---: | :---: |
+| ![Login Pelanggan](docs/screenshots/04_login_pelanggan.png) | ![Login Admin Staff](docs/screenshots/05_login_admin.png) | ![Login Owner](docs/screenshots/06_login_owner.png) |
+
+---
+
+### 4. Backoffice Pengelola: Dashboard, Diagram Otomatis & Kasir POS
+| Dashboard Terpadu, Diagram Chart.js & Otorisasi Batal (`/dashboard`) | Terminal Kasir POS Penjualan Langsung (`/sales/create`) |
+| :---: | :---: |
+| ![Dashboard Owner](docs/screenshots/08_owner_dashboard.png) | ![Kasir POS](docs/screenshots/09_pos_cashier.png) |
+
+| Riwayat Pembelian & Stok Masuk Supplier (`/purchases`) |
+| :---: |
+| ![Stok Masuk Purchases](docs/screenshots/10_stock_in_purchases.png) |
+
+---
+
 ## ✨ Fitur-Fitur Utama Sesuai Spesifikasi
 
 ### 1. Desain Toko Digital Kekinian & Estetik (`ladydevice.store`)

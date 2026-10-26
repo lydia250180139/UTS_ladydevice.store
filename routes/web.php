@@ -96,3 +96,59 @@ Route::middleware(['auth', 'role:owner'])->group(function () {
     Route::post('/owner/sales/{sale}/confirm-cancellation', [DashboardController::class, 'confirmCancellation'])->name('owner.sales.confirmCancellation');
     Route::post('/owner/sales/{sale}/reject-cancellation', [DashboardController::class, 'rejectCancellation'])->name('owner.sales.rejectCancellation');
 });
+
+// ==========================================
+// 5. SCREENSHOT PREVIEW ROUTES (FOR README GENERATION)
+// ==========================================
+Route::get('/screenshot/product', function () {
+    $product = \App\Models\Product::first();
+    return app(\App\Http\Controllers\StoreController::class)->show($product->slug);
+});
+
+Route::get('/screenshot/cart', function () {
+    $pelanggan = \App\Models\User::where('role', 'pelanggan')->first();
+    \Illuminate\Support\Facades\Auth::login($pelanggan);
+    $product = \App\Models\Product::first();
+    session()->put('cart', [
+        $product->id => [
+            'id' => $product->id,
+            'name' => $product->name,
+            'sku' => $product->sku,
+            'selling_price' => (float) $product->selling_price,
+            'quantity' => 1,
+            'image' => $product->image,
+            'color' => $product->color,
+            'specs' => $product->specs,
+        ]
+    ]);
+    return app(\App\Http\Controllers\StoreController::class)->viewCart();
+});
+
+Route::get('/screenshot/403', function () {
+    return response()->view('errors.forbidden', [
+        'title' => 'Akses Terlarang: Salah Portal Login',
+        'userRole' => 'pelanggan',
+        'requiredRoles' => ['owner'],
+        'message' => 'Akun Anda terdaftar sebagai Pelanggan. Portal ini memiliki otorisasi eksekutif penuh dan hanya dapat diakses oleh Pemilik Bisnis (Owner).',
+        'correctPortalUrl' => route('login.owner'),
+        'correctPortalLabel' => 'Buka Portal Khusus Owner',
+    ], 403);
+});
+
+Route::get('/screenshot/dashboard-owner', function () {
+    $owner = \App\Models\User::where('role', 'owner')->first();
+    \Illuminate\Support\Facades\Auth::login($owner);
+    return app(\App\Http\Controllers\DashboardController::class)->index();
+});
+
+Route::get('/screenshot/pos', function () {
+    $staff = \App\Models\User::where('role', 'staff')->first();
+    \Illuminate\Support\Facades\Auth::login($staff);
+    return app(\App\Http\Controllers\SaleController::class)->create();
+});
+
+Route::get('/screenshot/purchases', function () {
+    $staff = \App\Models\User::where('role', 'staff')->first();
+    \Illuminate\Support\Facades\Auth::login($staff);
+    return app(\App\Http\Controllers\PurchaseController::class)->index();
+});
