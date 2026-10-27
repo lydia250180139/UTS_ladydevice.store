@@ -300,7 +300,7 @@
                         <span class="font-serif text-xl font-bold text-white">ladydevice<span class="text-rose-400">.store</span></span>
                     </div>
                     <p class="text-xs text-slate-400 leading-relaxed">
-                        Boutique kurasi laptop estetik dan berdaya tinggi untuk perempuan karir, kreator digital, mahasiswi, dan profesional modern di Indonesia.
+                        Toko laptop estetik dan berperforma tinggi untuk pelajar, kreator digital, profesional karir, dan semua kalangan yang ingin tampil keren dan produktif di Indonesia.
                     </p>
                     <div class="flex items-center gap-3 text-sm text-slate-400">
                         <a href="#" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center hover:bg-rose-600 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>

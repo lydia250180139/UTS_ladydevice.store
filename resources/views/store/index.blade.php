@@ -19,10 +19,10 @@
                     </div>
                     <h1 class="text-3xl sm:text-5xl font-black font-serif leading-tight">
                         Laptop Estetik untuk <br class="hidden sm:inline">
-                        <span class="bg-gradient-to-r from-rose-200 via-pink-100 to-purple-200 bg-clip-text text-transparent italic">Perempuan Berdaya.</span>
+                        <span class="bg-gradient-to-r from-rose-200 via-pink-100 to-purple-200 bg-clip-text text-transparent italic">Semua Pejuang Digital.</span>
                     </h1>
                     <p class="text-sm sm:text-base text-rose-100/80 max-w-xl font-light leading-relaxed">
-                        Temukan paduan sempurna antara keindahan desain minimalis pastel dan performa komputasi profesional. Dilengkapi garansi resmi dan kemudahan transaksi.
+                        Temukan perpaduan sempurna antara desain modern yang memukau dan performa komputasi profesional. Cocok untuk pelajar, kreator, pekerja, dan siapa pun yang butuh laptop terbaik.
                     </p>
                     <div class="pt-2 flex flex-wrap gap-3">
                         <a href="#katalog" class="px-6 py-3.5 rounded-2xl bg-white text-rose-900 font-bold text-xs uppercase tracking-wider hover:bg-rose-50 shadow-lg shadow-rose-950/40 transition-all transform hover:-translate-y-0.5">
