@@ -157,7 +157,7 @@ class DatabaseSeeder extends Seeder
                 'color' => 'Midnight Blue Deep',
                 'specs' => 'Apple M3 Chip 8-Core CPU 10-Core GPU | 16GB Unified Memory | 512GB SSD | 15.3" Liquid Retina | 6 Speaker Audio System | Baterai hingga 18 jam',
                 'description' => 'Layar 15 inci yang lega dengan finish anodized seal untuk mengurangi sidik jari. Partner terbaik editing estetis dan multitasking.',
-                'image' => 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80',
+                'image' => 'https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=800&q=80',
                 'is_featured' => true,
             ],
             [
@@ -262,7 +262,7 @@ class DatabaseSeeder extends Seeder
                 'color' => 'Platinum Silver',
                 'specs' => 'Snapdragon X Elite 12-Core NPU 45 TOPS | 16GB RAM | 512GB SSD Removable | 13.8" PixelSense Flow 120Hz Touch | Copilot+ PC AI Native',
                 'description' => 'Generasi AI PC terbaru dari Microsoft dengan keyboard tactile ternyaman dan layar sentuh rasio 3:2 yang produktif.',
-                'image' => 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80',
+                'image' => 'https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=800&q=80',
                 'is_featured' => false,
             ],
             [
@@ -277,7 +277,7 @@ class DatabaseSeeder extends Seeder
                 'color' => 'Sakura Pink Satin',
                 'specs' => 'Intel Core i5-13500H 12-Core | 16GB LPDDR5 | 512GB NVMe SSD | 14" 2.8K 90Hz OLED 100% DCI-P3 | 1440p QHD Webcam with TNR | Bobot 1.25 kg',
                 'description' => 'Edisi spesial warna Sakura Pink lembut dengan bodi aluminium satin dan webcam super jernih untuk online meeting.',
-                'image' => 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80',
+                'image' => 'https://images.unsplash.com/photo-1765030956556-503a3e881f27?auto=format&fit=crop&w=800&q=80',
                 'is_featured' => true,
             ],
         ];
